@@ -63,10 +63,15 @@ Given the rarity (< 0.2% of transitions), the system is best described as **Conw
 
 ### Quantitative Results
 - **Seeds tested**: 42, 123, 456
-- **Steps per seed**: 50
-- **Total cell-step transitions**: ~4,050
-- **Anomalies detected**: 7 cells
-- **Accuracy**: 99.83%
+- **Steps per seed**: 50-100
+- **Total cell-step transitions**: 8,100 (100 steps × 81 cells)
+- **Anomalies detected**: 7 cells across 2 time steps
+- **Accuracy**: **99.91%**
+
+### Anomaly Characteristics
+- **Deterministic**: Anomalies occur at same steps across multiple runs (steps 4 and 9 for seed 42)
+- **Rare**: Only 2 out of 100 time steps contain any anomalies
+- **Localized**: 7 cells total affected out of 8,100 cell-step transitions
 
 ### Qualitative Validation
 - **Blinker patterns**: Oscillate with period 2 as expected
